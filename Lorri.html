@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #fff;
             color: #333;
         }
@@ -19,10 +19,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.8em;
             color: #fff;
         }
         .logo {
@@ -43,7 +44,7 @@
             text-decoration: none;
             padding: 5px 10px;
             border: 1px solid transparent;
-            border-radius: 3px;
+            border-radius: 5px;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s;
         }
         nav a:hover {
@@ -62,6 +63,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
         .container {
             max-width: 800px;
@@ -71,6 +73,7 @@
             background-color: #f7f7f7;
             padding: 20px;
             border: 1px solid #ddd;
+            border-radius: 10px;
             margin-bottom: 40px;
         }
         section h2 {
@@ -84,8 +87,20 @@
         .image-grid img {
             width: 100%;
             height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            border: 2px solid #e6ccff;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+        .personal-message {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: #ff69b4;
         }
         @media (max-width: 600px) {
             header {
@@ -119,7 +134,10 @@
         <div class="container">
             <section id="welcome" class="content">
                 <h1>Welcome</h1>
-                <p>Hello, Welcome to one of the best pages I have on my site. It's dedicated to the one and only Lorri!!!</p>
+                <p class="personal-message">
+                    Hello, welcome to one of the best pages I have on my site. It's dedicated to the one and only Lorri!!! 
+                   , and I hope this little page brings a smile to your face. 
+                </p>
                 <div class="image-grid">
                     <img src="https://alfieterry.co.uk/L.jpg" alt="L1" title="Lorri">
                     <img src="https://alfieterry.co.uk/AL.jpg" alt="La1" title="Lorri and Alfie">
@@ -134,3 +152,4 @@
     </footer>
 </body>
 </html>
+
