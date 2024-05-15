@@ -76,6 +76,17 @@
         section h2 {
             margin-top: 0;
         }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
         @media (max-width: 600px) {
             header {
                 text-align: center;
@@ -87,12 +98,9 @@
             nav {
                 justify-content: center;
             }
-        }
-        .pdf-embed {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ddd;
-            margin-bottom: 20px;
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -112,11 +120,12 @@
             <section id="welcome" class="content">
                 <h1>Welcome</h1>
                 <p>Hello, Welcome to one of the best pages I have on my site. It's dedicated to the one and only Lorri!!!</p>
-
-                <img src="https://alfieterry.co.uk/L.jpg" alt="L1" title="Lorri" width="300" height="200">
-                <img src="https://alfieterry.co.uk/AL.jpg" alt="La1" title="Lorri and alfie" width="300" height="200">
-                <img src="https://alfieterry.co.uk/LC.jpg" alt="L2" title="Lorri" width="200" height="200">           
-                <img src="https://alfieterry.co.uk/LS.jpg" alt="L3" title="Lorri" width="200" height="200"> 
+                <div class="image-grid">
+                    <img src="https://alfieterry.co.uk/L.jpg" alt="L1" title="Lorri">
+                    <img src="https://alfieterry.co.uk/AL.jpg" alt="La1" title="Lorri and Alfie">
+                    <img src="https://alfieterry.co.uk/LC.jpg" alt="L2" title="Lorri">
+                    <img src="https://alfieterry.co.uk/LS.jpg" alt="L3" title="Lorri">
+                </div>
             </section>
         </div>
     </main>
