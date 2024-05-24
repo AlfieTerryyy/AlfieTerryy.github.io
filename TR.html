@@ -3,32 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Terrance Toolbox</title>
+    <link rel="icon" href="Logo.ico" type="image/x-icon">
     <style>
-        /* Style for the hidden word */
-        #myWord {
-            display: none;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 40px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                text-align: center;
+            }
+            .logo {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+        .pdf-embed {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <input type="text" id="inputWord" placeholder="Type a word">
-    <button onclick="toggleWord()">Toggle Word</button>
-    <div id="myWord">This is the hidden word.</div>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Site Logo" />
+            <h1>The Terrance Toolbox</h1>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="Darbyshirenews">News</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
 
-    <script>
-        function toggleWord() {
-            const wordElement = document.getElementById("myWord");
-            const inputElement = document.getElementById("inputWord");
-            const word = inputElement.value.trim(); // Get the typed word
+<section id="question" class="content">
+    <h2>Question:</h2>
+    <p>What does the acronym "HTML" stand for?</p>
+</section>
 
-            if (word) {
-                wordElement.textContent = word; // Set the hidden word
-                wordElement.style.display = "block"; // Show the word
-            } else {
-                wordElement.style.display = "none"; // Hide the word
-            }
+            <section id="answer" class="content">
+    <h2>Your Answer:</h2>
+    <input type="text" id="userAnswer" placeholder="Type your answer here">
+</section>
+
+            <button onclick="checkAnswer()">Check Answer</button>
+
+            <script>
+    function checkAnswer() {
+        const userAnswer = document.getElementById("userAnswer").value.toLowerCase();
+        const correctAnswer = "hypertext markup language"; // Replace with the actual correct answer
+
+        if (userAnswer === correctAnswer) {
+            alert("Correct! Well done!");
+        } else {
+            alert("Oops! Try again.");
         }
-    </script>
+    }
+</script>
+
+
+
+
+            
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Lorri">'</a>
+            <p>© 2024 Alfie Terry</p>
+        </nav>
+    </footer>
 </body>
 </html>
-
+``
