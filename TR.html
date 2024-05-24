@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the hidden word */
+        #myWord {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputWord" placeholder="Type a word">
+    <button onclick="toggleWord()">Toggle Word</button>
+    <div id="myWord">This is the hidden word.</div>
+
+    <script>
+        function toggleWord() {
+            const wordElement = document.getElementById("myWord");
+            const inputElement = document.getElementById("inputWord");
+            const word = inputElement.value.trim(); // Get the typed word
+
+            if (word) {
+                wordElement.textContent = word; // Set the hidden word
+                wordElement.style.display = "block"; // Show the word
+            } else {
+                wordElement.style.display = "none"; // Hide the word
+            }
+        }
+    </script>
+</body>
+</html>
 
