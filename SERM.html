@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Circular path */
+        .circle-path {
+            width: 300px; /* Adjust as needed */
+            height: 300px; /* Adjust as needed */
+            border: 2px dashed #000; /* Dashed line for the circular path */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         /* Circular image */
         .circle-image {
             width: 100px; /* Smaller size */
             height: 100px; /* Smaller size */
             border-radius: 50%;
-            background-image: url("https://alfieterry.co.uk/Rom.png"); /* Replace with your image URL */
+            background-image: url("https://alfieterry.co.uk/Rom.png"); /* Replace with your circular image URL */
             background-size: cover;
             position: absolute;
-            top: 50%;
+            top: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             animation: rotateCircle 10s infinite linear; /* Longer duration for a bigger circle */
         }
 
-        /* Connector line */
-        .connector {
-            position: absolute;
-            top: 150px; /* Adjust as needed */
-            left: 150px; /* Adjust as needed */
-            width: 2px; /* Line width */
-            height: 200px; /* Line length */
-            background-color: #000; /* Line color */
-            content: "";
-        }
-
-        /* Box with another image */
-        .box {
+        /* Box with computer image */
+        .computer {
             width: 100px; /* Smaller size */
             height: 100px; /* Smaller size */
-            background-image: url("https://alfieterry.co.uk/Computer.png"); /* Replace with your image URL */
+            background-image: url("https://alfieterry.co.uk/Computer.png"); /* Replace with your computer image URL */
             background-size: cover;
             position: absolute;
             top: 50%;
@@ -43,18 +44,18 @@
 
         @keyframes rotateCircle {
             0% {
-                transform: translate(-50%, -50%) rotate(0deg);
+                transform: translateX(-50%) rotate(0deg);
             }
             100% {
-                transform: translate(-50%, -50%) rotate(360deg);
+                transform: translateX(-50%) rotate(360deg);
             }
         }
     </style>
 </head>
 <body>
+    <div class="circle-path"></div>
     <div class="circle-image"></div>
-    <div class="connector"></div>
-    <div class="box"></div>
+    <div class="computer" style="transform: translate(-50%, -50%) rotate(90deg);"></div>
+    <div class="computer" style="transform: translate(-50%, -50%) rotate(270deg);"></div>
 </body>
 </html>
-
