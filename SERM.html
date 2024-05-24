@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Circular image */
+        .circle-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url("img_avatar.png"); /* Replace with your image URL */
+            background-size: cover;
+        }
+
+        /* Connector line */
+        .connector {
+            position: absolute;
+            top: 100px; /* Adjust as needed */
+            left: 100px; /* Adjust as needed */
+            width: 2px; /* Line width */
+            height: 200px; /* Line length */
+            background-color: #000; /* Line color */
+            content: "";
+        }
+
+        /* Box with another image */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-image: url("another_image.jpg"); /* Replace with your image URL */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-image"></div>
+    <div class="connector"></div>
+    <div class="box"></div>
+</body>
+</html>
