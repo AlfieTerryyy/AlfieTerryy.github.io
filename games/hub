@@ -108,12 +108,12 @@
             <div class="classroom">
                 <h2>Math Class</h2>
                 <p>Teacher: Mr. Hill</p>
-                <p>Assignments: <a href="#">Homework 1</a>, <a href="#">Sparx reminder</a></p>
+                <p>Assignments: <a href="https://alfieterry.co.uk/games/Windef">WinDef</a>, <a href="#">Sparx reminder</a></p>
             </div>
             <div class="classroom">
                 <h2>Science(8SC)</h2>
                 <p>Teacher: Mrs. K jhonstn</p>
-                <p>Assignments: <a href="#">Lab Report</a>, <a href="#">Project Presentation</a></p>
+                <p>Assignments: <a href="https://alfieterry.co.uk/games/">Lab Report</a>, <a href="https://alfieterry.co.uk/games/">Project Presentation</a></p>
             </div>
             <!-- Add more fake classes here -->
         </div>
