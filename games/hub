@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Classroom</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        .account {
+            font-size: 16px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .classroom-list {
+            list-style: none;
+            padding: 0;
+        }
+        .classroom-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .classroom-icon {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+        .classroom-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .classroom-link:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex: 2;
+            display: flex;
+        }
+        .classroom {
+            flex: 1;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .classroom h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .classroom p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">My Logo</div>
+        <div class="account">Welcome, User123</div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul class="classroom-list">
+                <li class="classroom-item">
+                    <span class="classroom-icon">📚</span>
+                    <a class="classroom-link" href="#">Math Class</a>
+                </li>
+                <li class="classroom-item">
+                    <span class="classroom-icon">🔬</span>
+                    <a class="classroom-link" href="#">Science Class</a>
+                </li>
+                <!-- Add more fake classes here -->
+            </ul>
+        </div>
+        <div class="content">
+            <div class="classroom">
+                <h2>Math Class</h2>
+                <p>Teacher: Mr. Hill</p>
+                <p>Assignments: <a href="#">Homework 1</a>, <a href="#">Sparx reminder</a></p>
+            </div>
+            <div class="classroom">
+                <h2>Science(8SC)</h2>
+                <p>Teacher: Mrs. K jhonstn</p>
+                <p>Assignments: <a href="#">Lab Report</a>, <a href="#">Project Presentation</a></p>
+            </div>
+            <!-- Add more fake classes here -->
+        </div>
+    </div>
+</body>
+</html>
