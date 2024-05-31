@@ -30,7 +30,7 @@ h1 {
 }
 
 /* Button Styles */
-.button {
+.subject-link {
     background-color: #ff0000;
     color: #ffffff;
     border: 2px solid #ff0000;
@@ -41,7 +41,7 @@ h1 {
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
-.button:hover {
+.subject-link:hover {
     background-color: #ff6666;
     color: #fff;
     transform: scale(1.1);
