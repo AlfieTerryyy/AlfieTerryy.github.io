@@ -1,41 +1,53 @@
-        body {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .logo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 1rem;
-        }
-        .favicon {
-            display: none; /* Hide the favicon from the page */
-        }
- nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            border-radius: 3px;
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #fff;
-            color: #000;
-            border-color: #000;
-        }
-  section h2 {
-            margin-top: 0;
-        }
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+/* Hide the favicon from the page */
+.favicon {
+    display: none;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #333; /* Add a background color */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Increase padding for better clickability */
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+/* Section heading styles */
+section h2 {
+    margin-top: 1rem; /* Adjust margin-top for consistent spacing */
+}
