@@ -2,7 +2,7 @@
 
 /* Body Styles */
 body {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Arial, sans-serif; /* Changed font to Arial */
     background-color: #ffcc00;
     background-image: url('sparkles.gif');
     background-repeat: repeat;
@@ -69,5 +69,3 @@ h1 {
 .dance {
     animation: spin 3s infinite linear;
 }
-
-/* And now, let's add some flair to your HTML! */
