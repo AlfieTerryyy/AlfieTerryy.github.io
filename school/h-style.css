@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Body Styles */
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #ffcc00;
+    background-image: url('sparkles.gif');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Header Styles */
+h1 {
+    color: #ff00ff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+.nav-link {
+    font-size: 1.5rem;
+    color: #00ff00;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: rotate(360deg);
+}
+
+/* Button Styles */
+.button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: #ff6666;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Dancing Animations (because why not?) */
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dance {
+    animation: spin 3s infinite linear;
+}
+
+/* And now, let's add some flair to your HTML! */
