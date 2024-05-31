@@ -18,3 +18,21 @@
         .favicon {
             display: none; /* Hide the favicon from the page */
         }
+ nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+        }
