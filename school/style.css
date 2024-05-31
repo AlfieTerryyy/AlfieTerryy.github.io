@@ -110,3 +110,6 @@
           color: black;
           border: 2px solid #04AA6D;
       }
+      <button class="btn btn-rounded">Click Me</button>
+      <button class="btn-bordered">Submit</button>
+      <button class="btn btn-disabled" disabled>Disabled</button>
