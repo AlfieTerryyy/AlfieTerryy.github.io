@@ -1,33 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Style for the full-screen box */
-        body, html {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+        <py-script>
 
-        #fullscreen-box {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #f0f0f0; /* Set your desired background color */
-        }
-    </style>
-</head>
-<body>
-    <div id="fullscreen-box"></div>
-    <script type="module">
-        import('./shai.py').then(module => {
-            // Execute the Python code from shai.py
-            module.default();
-        });
-    </script>
-</body>
+
+import os
+import random
+
+responses = {
+    # Help
+    "help": ["https://alfieterry.co.uk/shai/help"],
+    "h": ["https://alfieterry.co.uk/shai/help"],
+    # Functions
+    "ss": ["Systems Stored Are Currently at : 000"],
+    "cm": ["The Current Amount of members is : 000"],
+}
+
+def SHAI_response(user_input):
+    return random.choice(responses.get(user_input.lower(), ["Invalid Request - Error Code: 001"]))
+
+def clear_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+while True:
+    user_input = input("Usr: ")
+    if user_input.lower() in ["usr stop", "us"]:
+        print("SHAI: Command Prompt Closing")
+        break
+    elif user_input.lower() == "clear":
+        clear_console()
+    else:
+        print("SHAI:", SHAI_response(user_input))
+
+
+            
+        </py-script>
+    </body>
 </html>
