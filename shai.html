@@ -1,42 +1,38 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    </head>
-    <body>
-        <py-script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Console</title>
+</head>
+<body>
+    <input type="text" id="commandInput" placeholder="Enter a command">
+    <button onclick="executeCommand()">Execute</button>
+    <div id="output"></div>
 
+    <script>
+        function executeCommand() {
+            const input = document.getElementById("commandInput").value;
+            const outputDiv = document.getElementById("output");
+            let response;
 
-import os
-import random
+            // Your predefined responses (modify as needed)
+            switch (input.toLowerCase()) {
+                case "help":
+                    response = "Help page: <a href='https://alfieterry.co.uk/shai/help'>Click here</a>";
+                    break;
+                case "ss":
+                    response = "Systems Stored Are Currently at: 000";
+                    break;
+                case "cm":
+                    response = "The Current Amount of members is: 000";
+                    break;
+                default:
+                    response = "Invalid Request - Error Code: 001";
+            }
 
-responses = {
-    # Help
-    "help": ["https://alfieterry.co.uk/shai/help"],
-    "h": ["https://alfieterry.co.uk/shai/help"],
-    # Functions
-    "ss": ["Systems Stored Are Currently at : 000"],
-    "cm": ["The Current Amount of members is : 000"],
-}
-
-def SHAI_response(user_input):
-    return random.choice(responses.get(user_input.lower(), ["Invalid Request - Error Code: 001"]))
-
-def clear_console():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-while True:
-    user_input = input("Usr: ")
-    if user_input.lower() in ["usr stop", "us"]:
-        print("SHAI: Command Prompt Closing")
-        break
-    elif user_input.lower() == "clear":
-        clear_console()
-    else:
-        print("SHAI:", SHAI_response(user_input))
-
-
-            
-        </py-script>
-    </body>
+            outputDiv.innerHTML = response;
+        }
+    </script>
+</body>
 </html>
