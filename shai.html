@@ -1,8 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the full-screen box */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #fullscreen-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0; /* Set your desired background color */
+        }
+    </style>
 </head>
 <body>
+    <div id="fullscreen-box"></div>
     <script type="module">
         import('./shai.py').then(module => {
             // Execute the Python code from shai.py
@@ -10,3 +30,4 @@
         });
     </script>
 </body>
+</html>
