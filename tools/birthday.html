@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Terrance Toolbox</title>
+        <link rel="icon" href="Logo.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Logo.png" alt="Site Logo" />
+                <h1>The Terrance Toolbox</h1>
+            </div>
+            <nav>
+                <a href="">Home</a>
+                <a href="Darbyshirenews">News</a>
+                <a href="License">License</a>
+            </nav>
+        </header>
+        <main>
+                <div style="border: 1px solid #ccc; padding: 20px; margin: 20px;">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Days Until Your Birthday</title>
+    </head>
+    <body>
+        <h1>Days Until Your Birthday</h1>
+        <p>Enter your birthdate:</p>
+        <input type="date" id="birthdate">
+        <button onclick="calculateDaysUntilBirthday()">Calculate</button>
+        <p id="result"></p>
+
+        <script>
+            function calculateDaysUntilBirthday() {
+                const birthdate = new Date(document.getElementById("birthdate").value);
+                const today = new Date();
+                const nextBirthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
+
+                if (today > nextBirthday) {
+                    nextBirthday.setFullYear(today.getFullYear() + 1);
+                }
+
+                const daysRemaining = Math.ceil((nextBirthday - today) / (1000 * 60 * 60 * 24));
+
+                if (daysRemaining === 0) {
+                    document.getElementById("result").textContent = "Happy Birthday! 🎉";
+                } else {
+                    document.getElementById("result").textContent = `Days until your next birthday: ${daysRemaining} days`;
+                }
+            }
+        </script>
+    </body>
+    </html>
+</div>
+        </main>
+        <footer>
+            &copy; Alfie Terry 2024. All rights reserved.
+        </footer>
+    </body>
+</html>
