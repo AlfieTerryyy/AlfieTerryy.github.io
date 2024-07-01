@@ -1,18 +1,16 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 900
-
 .rubik-<uniquifier> {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
+
 body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
+  margin: 0;
+  font-family: 'Rubik', sans-serif; /* Updated font family */
+  background-color: #000;
+  color: #fff;
+}
 
     header {
       background-color: #333;
