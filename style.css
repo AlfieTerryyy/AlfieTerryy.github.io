@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
-  background-color: #C0FEDD;
+  background-color: #F8F8F8;
   color: ;
 }
 
@@ -79,7 +79,7 @@ body {
     }
 
     .content {
-      background-color: #B2FAD4;
+      background-color: #E4E4E4;
       padding: 20px;
       border: 1px solid #444;
       margin-bottom: 40px;
