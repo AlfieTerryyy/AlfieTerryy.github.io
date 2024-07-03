@@ -7,9 +7,9 @@
 
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif; /* Updated font family */
-  background-color: #000;
-  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  background-color: #fff; /* Updated background color */
+  color: #000;
 }
 
     header {
