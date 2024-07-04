@@ -13,12 +13,21 @@ function openModal(image) {
 /*End Doc display*/
 
 /*Nav*/
-function toggleNav() {
-  const navButtons = document.querySelectorAll('.nav-square');
-  navButtons.forEach(button => {
-    if (!button.classList.contains('.nav-square-toggle')) {
-      button.classList.toggle('hidden');
-    }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
-}
+});
 /*End Nav*/
+
+/* somthings copilot said i should add*/
+
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+  }
+});
+
+//copilot said i should add end 
