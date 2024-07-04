@@ -41,66 +41,24 @@ body {
 
 <!-----------button logic------------------->
 
-/* Style your navigation bar */
-nav {
-    background-color: #52b2cf;
-    overflow: hidden;
-}
-
-/* Style your navigation links */
-.navigation li {
-    float: left;
-    margin-left: 50px;
-}
-
-.navigation li a {
-    /* Your existing styles */
-}
-
-
-  .nav-square {
- display: none;
-    }
-    .nav-square-toggle {
-      display: inline-block;
-      width: 140px;
-      height: 24px;
-      background-color: none;
-      border-radius: 10.258px;
-      margin: 10.258px;
-      text-align: center;
-      line-height: 25.258px;
-      font-size: 16px;
-      color: white;
-      cursor: pointer;
-    }
-    .nav-square2 {
-            display: inline-block;
-            width: 170px;
-            height: 25px;
-            background-color: Red;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-            line-height: 25px;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
         }
-.hidden {
-      display: inline-block;
-      width: 150.258px;
-      height: 25.258px;
-      background-color: Red;
-      border-radius: 10.258px;
-      margin: 10.258px;
-      text-align: center;
-      line-height: 25.258px;
-      font-size: 16px;
-      color: white;
-      cursor: pointer;
-}
-
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #e6ccff; /* Lilac on hover */
+            border-color: #c8a2c8;
 <!-----------------End of Button Logic-------------------->
     main {
       padding: 20px;
