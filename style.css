@@ -3,7 +3,7 @@
 .rubik-<uniquifier> {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -40,25 +40,27 @@ body {
     }
 
 <!-----------button logic------------------->
-
-        }
         nav {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #fff;
-            color: #e6ccff; /* Lilac on hover */
-            border-color: #c8a2c8;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+nav a {
+  background-color: #E74848;
+}
+nav a:hover {
+  background-color: #fff;
+  color: #e6ccff;
+  border-color: #c8a2c8;
+}
+
 <!-----------------End of Button Logic-------------------->
     main {
       padding: 20px;
