@@ -38,13 +38,20 @@ body {
       margin-right: 10px;
     }
 
-    nav {
+<!-----------button logic------------------->
+
+.hidden {
+  display: none;
+}
+
+
+    .show-button {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    nav a {
+    .show-button a{
       color: #fff;
       text-decoration: none;
       padding: 5px 10px;
@@ -53,12 +60,42 @@ body {
       transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     }
 
-    nav a:hover {
+    .show-button a:hover {
       background-color: #fff;
       color: #000;
       border-color: #000;
     }
 
+
+    .nav-toggle {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-toggle a{
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .nav-toggle a:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #000;
+    }
+
+
+
+
+
+
+
+
+<!-----------------End of Button Logic-------------------->
     main {
       padding: 20px;
     }
