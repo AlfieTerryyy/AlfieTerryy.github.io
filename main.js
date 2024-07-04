@@ -16,8 +16,8 @@ function openModal(image) {
 function toggleNav() {
   const navButtons = document.querySelectorAll('hidden');
   navButtons.forEach(button => {
-    if (!button.classList.contains('.nav-toggle')) {
-      button.classList.toggle('.show-button');
+    if (!button.classList.contains('.nav-square-toggle')) {
+      button.classList.toggle('.nav-square');
     }
   });
 }
