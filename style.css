@@ -40,59 +40,38 @@ body {
 
 <!-----------button logic------------------->
 
+ .nav-square {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    .nav-square-toggle {
+      display: inline-block;
+      width: 140px;
+      height: 24px;
+      background-color: none;
+      border-radius: 10.258px;
+      margin: 10.258px;
+      text-align: center;
+      line-height: 25.258px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+    }
+    .nav-square2 {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
 .hidden {
   display: none;
 }
-
-
-    .show-button {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .show-button a{
-      color: #fff;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid transparent;
-      border-radius: 3px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    }
-
-    .show-button a:hover {
-      background-color: #fff;
-      color: #000;
-      border-color: #000;
-    }
-
-
-    .nav-toggle {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .nav-toggle a{
-      color: #fff;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid transparent;
-      border-radius: 3px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    }
-
-    .nav-toggle a:hover {
-      background-color: #fff;
-      color: #000;
-      border-color: #000;
-    }
-
-
-
-
-
-
 
 
 <!-----------------End of Button Logic-------------------->
