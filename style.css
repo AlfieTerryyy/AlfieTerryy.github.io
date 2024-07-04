@@ -1,9 +1,8 @@
 
-
 .rubik-<uniquifier> {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -39,29 +38,27 @@ body {
       margin-right: 10px;
     }
 
-<!-----------button logic------------------->
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-nav a {
-  background-color: #E74848;
-}
-nav a:hover {
-  background-color: #fff;
-  color: #e6ccff;
-  border-color: #c8a2c8;
-}
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-<!-----------------End of Button Logic-------------------->
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #000;
+    }
+
     main {
       padding: 20px;
     }
