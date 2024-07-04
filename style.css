@@ -7,16 +7,14 @@
 }
 
 body {
-  background-image: url('bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  hight: 100vh;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #F8F8F8;
+  color: ;
 }
 
     header {
-      backdrop-filter: blur(80);
+      background-color: #E74848;
       color: #fff;
       padding: 20px;
       display: flex;
@@ -56,14 +54,14 @@ body {
     }
 
     nav a:hover {
-      backdrop-filter: blur(80);
+      background-color: #fff;
       color: #000;
       border-color: #000;
     }
 
 .navbar {
     /* common styles for all screen sizes */
-    backdrop-filter: blur(80);
+    background-color: #333;
     overflow: hidden;
     font-family: Arial, sans-serif;
 }
@@ -103,7 +101,7 @@ body {
     }
 
     footer {
-      backdrop-filter: blur(80);
+      background-color: #E74848;
       color: #fff;
       padding: 10px;
       text-align: center;
