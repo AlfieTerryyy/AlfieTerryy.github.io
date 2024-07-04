@@ -14,10 +14,10 @@ function openModal(image) {
 
 /*Nav*/
 function toggleNav() {
-  const navButtons = document.querySelectorAll('hidden');
+  const navButtons = document.querySelectorAll('.nav-square');
   navButtons.forEach(button => {
     if (!button.classList.contains('.nav-square-toggle')) {
-      button.classList.toggle('.nav-square');
+      button.classList.toggle('hidden');
     }
   });
 }
