@@ -14,7 +14,7 @@ body {
 }
 
     header {
-      backdrop-filter: blur(50);
+      backdrop-filter: blur(80);
       color: #fff;
       padding: 20px;
       display: flex;
@@ -54,14 +54,14 @@ body {
     }
 
     nav a:hover {
-      backdrop-filter: blur(50);
+      backdrop-filter: blur(80);
       color: #000;
       border-color: #000;
     }
 
 .navbar {
     /* common styles for all screen sizes */
-    backdrop-filter: blur(50);
+    backdrop-filter: blur(80);
     overflow: hidden;
     font-family: Arial, sans-serif;
 }
@@ -101,7 +101,7 @@ body {
     }
 
     footer {
-      backdrop-filter: blur(50);
+      backdrop-filter: blur(80);
       color: #fff;
       padding: 10px;
       text-align: center;
