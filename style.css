@@ -14,7 +14,7 @@ body {
 }
 
     header {
-      background-color: #E74848;
+      backdrop-filter: blur(50);
       color: #fff;
       padding: 20px;
       display: flex;
