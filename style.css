@@ -16,7 +16,7 @@ body {
 }
 
     header {
-      backdrop-filter: blur(80);
+      background-image: url('box.jpg');
       color: #fff;
       padding: 20px;
       display: flex;
@@ -103,7 +103,7 @@ body {
     }
 
     footer {
-      backdrop-filter: blur(80);
+      background-image: url('box.jpg');
       color: #fff;
       padding: 10px;
       text-align: center;
@@ -118,7 +118,7 @@ body {
     }
 
     .content {
-      background-color: #E4E4E4;
+      background-image: url('box.jpg');
       padding: 20px;
       border: 1px solid #444;
       margin-bottom: 40px;
